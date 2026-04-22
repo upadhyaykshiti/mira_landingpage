@@ -1,0 +1,20 @@
+export const metadata = {
+  title: "Mira",
+  description: "AI-powered journaling app",
+};
+
+import "./globals.css";
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body className="bg-bg text-text">
+        {children}
+      </body>
+    </html>
+  );
+}
